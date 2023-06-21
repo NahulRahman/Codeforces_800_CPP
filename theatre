@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long n, m, a;
+    cin >> n >> m >> a;
+
+    long long flagsInRow = (n + a - 1) / a;  // Number of flagstones in each row
+    long long flagsInCol = (m + a - 1) / a;  // Number of flagstones in each column
+
+    long long totalFlags = flagsInRow * flagsInCol;  // Total number of flagstones needed
+
+    cout << totalFlags << endl;
+
+    return 0;
+}
